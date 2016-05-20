@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#bb000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/tvCarName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="厢式车"
+            android:textColor="@color/white"
+            android:textSize="28dp" />
+
+        <ImageView
+            android:id="@+id/dlg_iv_cancel"
+            android:layout_width="80dp"
+            android:scaleType="centerInside"
+            android:layout_height="match_parent"
+            android:src="@drawable/pic_car_cancel" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/ivCar"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/pic_car_info1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运输体积："
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/dlg_tv_tiji"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="8.3方"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车内尺寸："
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/dlg_tv_chicun"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="3300*1610*1570mm"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+        
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运输价格："
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/dlg_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="40元起步价（3公里内） +5元/公里"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

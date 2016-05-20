@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:background="#ebebeb"
+    android:clickable="false"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="6dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            style="@style/profile_funtion_item_conatner"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/profile_funtion_title_txt"
+                android:text="接单" />
+
+            <TextView
+                style="@style/profile_funtion_item_txt"
+                android:id="@+id/user_profile_jiedan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            style="@style/profile_funtion_item_conatner"
+              android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/profile_funtion_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="违约" />
+
+            <TextView
+                style="@style/profile_funtion_item_txt"
+                android:id="@+id/user_profile_weiyue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+            android:layout_weight="1.0"
+            style="@style/profile_funtion_item_conatner"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/profile_funtion_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好评" />
+
+            <TextView
+                android:id="@+id/user_profile_good"
+                style="@style/profile_funtion_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            style="@style/profile_funtion_item_conatner"
+              android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                 style="@style/profile_funtion_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="差评" />
+
+            <TextView
+                android:id="@+id/user_profile_bad"
+                style="@style/profile_funtion_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+    
+            style="@style/profile_funtion_item_conatner"
+              android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                 style="@style/profile_funtion_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐司机" />
+
+            <TextView
+                android:id="@+id/user_profile_rmdtaxi"
+                 style="@style/profile_funtion_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            style="@style/profile_funtion_item_conatner"
+              android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/profile_funtion_title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐乘客" />
+
+            <TextView
+                android:id="@+id/user_profile_rmdpass"
+                 style="@style/profile_funtion_item_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="服务评价"
+        android:textColor="#666666"
+        android:layout_marginTop="4dp"
+        android:gravity="left|center_vertical"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/list_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

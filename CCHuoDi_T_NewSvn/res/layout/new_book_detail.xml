@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expand="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/book_head"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/detail_logo" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/detail_line" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1.0"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/book_detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/book_detail_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#909090"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1.0"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/book_detail_drivername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#909090"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/book_detail_taxinumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#909090"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/book_detail_calltaxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_icon_call"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/book_detail_map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/map_current_pos"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn027"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/bottom_time"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_detail_time_layout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="用车倒计时"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="预计距离"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:background="@drawable/bg_detail_time"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/book_detail_time_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/book_detail_time_unit"
+                        android:layout_width="20dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="小时"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_detail_time"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/book_detail_distance_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/book_detail_distance_unit"
+                        android:layout_width="20dp"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="公里"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <cn.com.easytaxi.custom.ExpandablePanel
+                android:id="@+id/book_detail_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                expand:collapsedHeight="0dp"
+                expand:content="@+id/optLayout"
+                expand:handle="@+id/optIndicator" >
+
+                <LinearLayout
+                    android:id="@id/optLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffc001"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:id="@+id/detai_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/detai_layout_suggest"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/book_detail_auth_code"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:background="#75705c"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp" >
+
+                        <Button
+                            android:id="@+id/book_detail_leftbtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/btn026" />
+
+                        <Button
+                            android:id="@+id/book_detail_rightbtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/btn026" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="10dp"
+                        android:background="@drawable/line_shadow" />
+
+                    <ImageButton
+                        android:id="@+id/optIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:src="@drawable/book_detail_more" />
+                </FrameLayout>
+            </cn.com.easytaxi.custom.ExpandablePanel>
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

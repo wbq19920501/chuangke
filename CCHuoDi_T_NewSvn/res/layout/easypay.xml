@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg002"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/book_head"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:orientation="vertical"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tixing" />
+
+            <TextView
+                android:id="@+id/pay_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择以下金额，充值至您的账户!"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="支付有时会有网络延迟，请耐心等待一会儿"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="支付金额"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etPayMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="请输入支付金额"
+                android:inputType="number" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/p_main_slide" />
+        
+        
+        <LinearLayout
+            android:id="@+id/pay_tonglian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_pay_alipay"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/pic_tonglian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="通  联"
+                android:textColor="#f89231"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        
+
+        <LinearLayout
+            android:id="@+id/pay_union"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_pay_alipay"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/union" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="银  联"
+                android:textColor="#f89231"
+                android:textSize="25sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/pay_alipay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_pay_alipay"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pic_weixin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="微  信"
+                android:textColor="#147A7C"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pay_alipay2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_pay_alipay"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pic_zhifubao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="支付宝"
+                android:textColor="#147A7C"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pay_offline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_pay_alipay"
+            android:clickable="true"
+            android:gravity="center"
+             android:visibility="gone"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pic_offline" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="线下支付"
+                android:textColor="#f89231"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/pay_xianjin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_pay_alipay"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+             <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pay_xianjin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="现金支付"
+                android:textColor="#147A7C"
+                android:textSize="25sp" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:et="http://cn.com.easytaxi"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <!-- 
+    <ImageView
+        android:id="@+id/main_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pic066" /> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dip"
+        android:paddingBottom="10dip"
+        android:paddingTop="5dip" >
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <cn.com.easytaxi.common.Button01
+                android:id="@+id/b1"
+                android:layout_width="80dip"
+                android:layout_height="80dip" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:textColor="#959595"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <cn.com.easytaxi.common.Button01
+                android:id="@+id/b2"
+                android:layout_width="80dip"
+                android:layout_height="80dip" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:textColor="#959595"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <cn.com.easytaxi.common.Button01
+                android:id="@+id/b3"
+                android:layout_width="80dip"
+                android:layout_height="80dip" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:textColor="#959595"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+	<View android:layout_width="fill_parent" android:layout_height="2dp" android:background="@drawable/p_main_slide"/>
+</LinearLayout>

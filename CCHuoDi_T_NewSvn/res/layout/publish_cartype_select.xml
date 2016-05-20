@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <RadioGroup
+        android:id="@+id/cartype_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/cartype_rb_one"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_cartype"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_cartype1"
+            android:button="@null"
+            android:checked="true"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/cartype_rb_two"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_cartype"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_cartype2"
+            android:button="@null"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/cartype_rb_three"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_cartype"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:background="@drawable/selector_cartype3"
+            android:button="@null"
+            android:enabled="false"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/cartype_rb_four"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_cartype"
+            android:layout_weight="0"
+            android:background="@drawable/selector_cartype4"
+            android:button="@null"
+            android:enabled="false"
+            android:text="" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg002" >
+
+    <include
+        android:id="@+id/map_title_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_layout" />
+
+    <cn.com.easytaxi.ui.view.PullToRefreshListView
+        android:id="@+id/profile_listview_comment"
+        android:layout_below="@+id/map_title_bar"
+        android:cacheColorHint="@android:color/transparent"
+     	style="@style/widget_listview" >
+    </cn.com.easytaxi.ui.view.PullToRefreshListView>
+
+    <RelativeLayout
+        android:id="@+id/cover_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33003333"
+        android:clickable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#222222"
+            android:padding="10dp" >
+
+            <ProgressBar
+                android:id="@+id/progressBar_loading"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

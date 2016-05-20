@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/map_title_bar"
+        layout="@layout/title_layout" />
+
+    <cn.com.easytaxi.ui.view.OrientListView
+        android:id="@+id/message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#F5F5F5"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false" >
+    </cn.com.easytaxi.ui.view.OrientListView>
+
+</LinearLayout>

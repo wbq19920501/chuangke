@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/bottom_single_btn_height"
+    android:background="@drawable/book_publish"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_drawable_add" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:text="添加司机"
+        android:shadowColor="#a05142"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</LinearLayout>

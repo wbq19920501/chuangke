@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_title_height"
+    android:background="#147A7C"
+    android:gravity="center_vertical"
+    android:visibility="visible" >
+
+    <ImageButton
+        android:id="@+id/map_title_leftbtn"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:background="@drawable/btn001"
+        android:src="@drawable/btn030" />
+
+    <TextView
+        android:id="@+id/map_title_mid_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:shadowColor="#000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:text="即时叫车"
+        android:textColor="#FFFFFFff"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/map_title_right_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:background="@null"
+        android:textColor="@drawable/color_bar_right"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/map_title_right_spinner_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dip"
+        android:background="@drawable/btn001"
+        android:textColor="@drawable/color_bar_right"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

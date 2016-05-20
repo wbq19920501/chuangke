@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:taxi="http://schemas.android.com/apk/res/com.easytaxi.etpassengersx"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <include
+        android:id="@+id/map_title_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_layout" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_can"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:id="@+id/search_can"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        android:layout_below="@+id/map_title_bar" >
+
+        <cn.com.easytaxi.platform.view.AddressEditView
+            android:id="@+id/search_button_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pic105"
+            android:gravity="center_vertical"
+            taxi:load_oninflated="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@null"
+            android:paddingLeft="4dp"
+            android:src="@drawable/ic_search" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/map_traffic_state"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/search_can"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:button="@null"
+        android:checked="false"
+        android:background="@drawable/icon_one_bg086"
+        android:visibility="visible" />
+ 
+    
+    
+    <ImageButton
+        android:id="@+id/map_current_pos"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/map_traffic_state"
+   	 
+    	 android:layout_alignRight="@+id/map_traffic_state"
+        android:background="@drawable/btn027"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/map_end_pos"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="4dp"
+ 
+        android:layout_below="@+id/map_current_pos"
+     
+      	 android:layout_alignRight="@+id/map_traffic_state"
+        android:background="@drawable/btn040"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/map_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@null"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <!-- android:textColor="#2889e2" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F3F3"
+            android:orientation="vertical" >
+
+             
+            <TextView
+                android:id="@+id/map_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/onetaix_tip_address_font_size" />
+
+            <TextView
+                android:id="@+id/map_address_ext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingBottom="2dp"
+                android:textSize="@dimen/onetaix_tip_address_font_size_ext" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_taxi_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dip"
+            android:background="#bbffffff"
+            android:padding="6dp" >
+
+            <Button
+                android:id="@+id/map_cancel"
+                android:layout_width="70dp"
+                android:layout_height="52dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn026"
+                android:text="下一步"
+                android:textColor="#e56814"
+                android:textSize="19sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/map_tel_taxi"
+                android:layout_toRightOf="@+id/map_cancel"
+                android:gravity="center"
+                android:paddingTop="0dp" >
+
+                <ImageView
+                    android:id="@+id/map_info_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pic133"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:orientation="vertical"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp" >
+
+                    <TextView
+                        android:id="@+id/map_taxi_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/map_taxi_driver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/map_taxi_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/map_tel_taxi"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/btn003" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/confirm_offlinemap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="5dip"
+        android:textColor="#FF6600"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/map_traffic_state"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:padding="3dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/zoomOut"
+                android:layout_width="@dimen/width1"
+                android:layout_height="@dimen/height1"
+                android:background="@drawable/zoom_out_port" />
+
+            <Button
+                android:id="@+id/zoomIn"
+                android:layout_width="@dimen/width1"
+                android:layout_height="@dimen/height1"
+                android:background="@drawable/zoom_in_port" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/one_speak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        layout="@layout/onetaxi_new_speak_layout"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/progress_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        layout="@layout/onetaxi_progress_alarm"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/progress_rcd_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="false"
+        layout="@layout/onetaxi_voice_rcd_window"
+        android:clickable="false"
+        android:visibility="gone" />
+
+    
+   <include
+        android:id="@+id/voice_inpuuting_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/voice_input_layout" 
+        android:visibility="gone" />   
+    
+
+</RelativeLayout>

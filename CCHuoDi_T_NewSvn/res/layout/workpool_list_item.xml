@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/workpool_item_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light" >
+
+        <TextView
+            android:id="@+id/workpool_role"
+            android:layout_width="12dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:lines="2"
+            android:text="找车" />
+
+        <TextView
+            android:id="@+id/workpool_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/workpool_role"
+            android:text="开始地址" />
+
+        <TextView
+            android:id="@+id/workpool_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/workpool_role"
+            android:text="结束地址" />
+
+        <TextView
+            android:id="@+id/workpool_startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:text="日期" />
+
+        <TextView
+            android:id="@+id/workpool_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:text="时间" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/workpool_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+        android:text="成功找到1条匹配线路" />
+
+</LinearLayout>

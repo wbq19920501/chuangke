@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="146dp"
+    android:background="@drawable/white_round"
+    android:paddingBottom="16dp" >
+
+    <TextView
+        android:id="@+id/dlg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:padding="6dp"
+        android:paddingLeft="16dp"
+        android:text="注意"
+        android:textColor="#424242"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/dlg_title"
+        android:background="#ff8226" />
+
+      <TextView
+        android:id="@+id/dlg_info"
+        android:layout_below="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"	
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:padding="6dp"
+        android:paddingLeft="16dp"
+        android:text="您确认要退出吗？"
+        android:textColor="#424242"
+        android:textSize="20sp" />
+    
+    <LinearLayout 
+         android:layout_below="@+id/dlg_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+        android:id="@+id/button_ok"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/btn026"
+        android:text="确认"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="50dp"
+        android:text="取消"
+        android:background="@drawable/btn026"
+        android:textColor="#000"
+        android:textSize="18sp" />
+    </LinearLayout>
+    
+
+</RelativeLayout>

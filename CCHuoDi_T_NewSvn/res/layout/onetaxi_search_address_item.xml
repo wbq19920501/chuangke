@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/address_parent"
+    android:background="@drawable/btn038"
+    android:descendantFocusability="blocksDescendants">
+ 
+
+   
+      <Button
+        android:id="@+id/search_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="10dp"
+         android:background="@drawable/btn036"
+         android:clickable="true"
+         android:text="删除"
+         android:textSize="18sp"
+         android:textColor="#424242"
+         />  
+         
+       <TextView
+        android:id="@+id/search_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/search_add"
+        android:text="某地"
+        android:textColor="#424242"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        
+         />
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background009"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/send_to_taxi"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background017"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="推荐给司机"
+                android:textColor="#1c0a0a"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_collapse" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#a2a2a2" />
+
+        <LinearLayout
+            android:id="@+id/send_to_user"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background017"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="推荐给乘客"
+                android:textColor="#1c0a0a"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_collapse" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background009"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/send_sms"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background017"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="短信"
+                android:textColor="#1c0a0a"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_collapse" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#a2a2a2" />
+
+        <LinearLayout
+            android:id="@+id/send_sina"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background017"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="新浪微博"
+                android:textColor="#1c0a0a"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_collapse" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#a2a2a2" />
+
+        <LinearLayout
+            android:id="@+id/send_qq"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background017"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="腾讯微博"
+                android:textColor="#1c0a0a"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_collapse" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/shared_public"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background009"
+        android:orientation="vertical" >
+
+
+         
+    </LinearLayout>
+
+</LinearLayout>

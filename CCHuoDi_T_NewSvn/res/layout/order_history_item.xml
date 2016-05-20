@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/start_address_icon" />
+
+        <TextView
+            android:id="@+id/history_list_item_start_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5a5a5a"
+            android:textSize="@dimen/font_size_same" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/history_list_item_end_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/end_address_icon" />
+
+        <TextView
+            android:id="@+id/history_list_item_end_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#5a5a5a"
+            android:textSize="19sp" />
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/list_line"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+        	android:gravity="center_vertical"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        >
+	        
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/time_icon_nor"
+	            />
+	        
+	        <TextView 
+	            android:id="@+id/history_list_item_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#909090"
+	            android:layout_marginLeft="5dp"
+	            android:textSize="20sp"
+	            />
+	        
+	        <TextView 
+	            android:id="@+id/history_list_item_price"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#e57018"
+	            android:layout_marginLeft="10dp"
+	            android:textSize="20sp"
+	            />
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#909090"
+	            android:textSize="@dimen/font_size_large"
+	            android:text="元"
+	            />
+	        
+	    </LinearLayout>
+	    
+	    <LinearLayout 
+	        android:id="@+id/pingjia_back_order_history"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:background="@drawable/history_btn_bg"
+		    android:layout_centerHorizontal="true"
+	       
+	        android:gravity="center"
+	        >
+	        
+	        <Button 
+	            android:id="@+id/history_list_item_complaints"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/btn020"
+		        android:textColor="#ff6600"
+		        android:textSize="@dimen/font_size_large"
+		        android:gravity="center"
+		        android:visibility="gone"
+		        android:text="投诉"
+		        />
+	        
+		    <Button 
+	            android:id="@+id/history_list_item_evaluate"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/btn020"
+		        android:textSize="@dimen/font_size_large"
+		        android:layout_marginLeft="5dp"
+		        android:layout_gravity="center"
+		        android:textColor="#399630"
+		        android:gravity="center"
+		        android:text="评价"
+		        />
+		    
+		    <TextView android:id="@+id/haveEvaluated_order_history"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="#ff6600"
+		        android:textSize="@dimen/font_size_large"
+		        android:gravity="center"
+		        android:text="已评价"
+		        android:visibility="gone"/>
+	    
+	    </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

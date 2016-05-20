@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bottom_but_width">80dp</dimen>
+    <dimen name="bottom_but_height">73dp</dimen>
+    <dimen name="top1">130dp</dimen>
+    <dimen name="top2">5dp</dimen>
+    <dimen name="width1">48dp</dimen>
+    <dimen name="height1">46dp</dimen>
+    <dimen name="font_size_small">13sp</dimen>
+    <dimen name="font_size_large">16sp</dimen>
+    <dimen name="font_size_same">18sp</dimen>
+    <dimen name="bottom_single_btn_height">60dp</dimen>
+    <dimen name="top_title_height">48dp</dimen>
+    <dimen name="onetaix_tip_address_font_size">17sp</dimen>
+    <dimen name="onetaix_tip_address_font_size_ext">14sp</dimen>
+
+    <!--
+         	android:paddingLeft="3dp"
+  		android:paddingRight="3dp"
+    -->
+    <!-- android:maxWidth="50dp" -->
+    <dimen name="price_padding_left">3dp</dimen>
+    <dimen name="price_padding_right">3dp</dimen>
+    <dimen name="dlg_width">300dp</dimen>
+    <dimen name="height_cartype">60dp</dimen>
+
+</resources>

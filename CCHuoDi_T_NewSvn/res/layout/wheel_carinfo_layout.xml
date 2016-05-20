@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/yellow_state"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/bj_button_cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/line1"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bj_button_ok"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="确认"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/am_pm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="下楼方式"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/clockadd_hour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="特殊物品"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/clockadd_minutes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="上楼方式"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <cn.com.easytaxi.book.view.scrollwheel.WheelView
+            android:id="@+id/bj_am_pm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <cn.com.easytaxi.book.view.scrollwheel.WheelView
+            android:id="@+id/bj_clockadd_hour"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <cn.com.easytaxi.book.view.scrollwheel.WheelView
+            android:id="@+id/bj_clockadd_minutes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.easytaxi.etpassengersx"
+    android:layout_width="fill_parent"
+    android:layout_height="135dp"
+    android:orientation="vertical" >
+
+    <cn.com.easytaxi.onetaxi.component.IndicatorViewPager
+        android:id="@+id/adv_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:focusable="false" />
+</RelativeLayout>

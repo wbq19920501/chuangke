@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/book_head"
+        layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/bj_layout_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_bj_layout"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/bj_tv_time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="10dp"
+                        android:text="11:45"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/bj_tv_week"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:text="星期一"
+                            android:textColor="#000000"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/bj_tv_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="2015/04/15"
+                            android:textColor="#6f6969"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/pic_triangle_yellow" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_bj_layout" >
+
+                <TextView
+                    android:id="@+id/bj_tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:padding="10dp"
+                    android:text="11:45"
+                    android:textColor="@color/yellow_state"
+                    android:textSize="24dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/line_book_vertical"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/bj_tv_startaddr"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:drawableLeft="@drawable/pic155"
+                        android:gravity="center_vertical"
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/line_book_vertical"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/bj_tv_endaddr"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/pic155_end"
+                        android:gravity="center_vertical"
+                        android:hint="请选择下车地点"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="16dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/bj_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/zuche_cartyp1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bj_bg_pingban"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/zuche_cartyp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bj_bg_xiangshi"
+                    android:button="@null" />
+
+                <RadioButton
+                    android:id="@+id/zuche_cartyp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_bj_car3"
+                    android:button="@null"
+                    android:visibility="invisible" />
+
+                <RadioButton
+                    android:id="@+id/zuche_cartyp4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/bg_bj_car4"
+                    android:button="@null"
+                    android:visibility="invisible" />
+            </RadioGroup>
+
+            
+
+            <LinearLayout
+                android:id="@+id/bj_layout_detailinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_bj_layout"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/bj_tv_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableRight="@drawable/pic_triangle_yellow"
+                    android:padding="10dp"
+                    android:text="下楼方式  无"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/line_book_vertical"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/bj_tv_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableRight="@drawable/pic_triangle_yellow"
+                    android:padding="10dp"
+                    android:text="特殊物品 无"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/line_book_vertical"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/bj_tv_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableRight="@drawable/pic_triangle_yellow"
+                    android:padding="10dp"
+                    android:text="上楼方式 无"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="运输费:300元"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/fujia_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="附加费:"
+                android:textColor="@color/red" />
+            
+            <TextView
+                android:id="@+id/bj_tv_bz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="总费用:300元"
+                android:textColor="@color/red"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/pic105"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/bj_layout_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn026"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/pic135" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#ffffffff"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="2.0"
+                android:soundEffectsEnabled="true"
+                android:text="提交"
+                android:textColor="#ff424242"
+                android:textSize="20sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

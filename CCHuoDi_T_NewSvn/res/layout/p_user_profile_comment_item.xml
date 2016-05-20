@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bggggggg"
+    android:paddingLeft="16dp"
+    android:background="#d2d2d2"
+    android:paddingBottom="6dp"
+    android:paddingTop="4dp"
+    android:paddingRight="16dp" >
+
+    <ImageView
+        android:id="@+id/comment_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="6dp"
+        android:background="@null"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/pic1007" />
+
+    <TextView
+        android:id="@+id/comment_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/comment_flag"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/comment_flag"
+        android:text="毛毛虫"
+        android:textColor="#909090"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/comment_flag"
+        android:layout_marginLeft="10dp"
+        android:text="昨天"
+        android:textColor="#909090"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/comment_flag"
+        android:textColor="#323232"
+        
+        android:text="很准时，就是车里比较臭。" />
+
+</RelativeLayout>

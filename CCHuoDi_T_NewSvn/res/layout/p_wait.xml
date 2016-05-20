@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/add_mong_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/money_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="该地平局打车时间为10分钟!"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/money_tip"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+ 
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        layout="@layout/advise_layout" />
+
+    <ImageView
+        android:id="@+id/wait_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+         
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/wait_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/wait_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/wait_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg008"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/wait_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn015"
+            android:padding="5dip"
+            android:textSize="14dip"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/wait_button_retry_addmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn015"
+            android:padding="5dip"
+            android:text="加价重发"
+            android:textSize="14dip"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/wait_button_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn015"
+            android:padding="5dip"
+            android:text="重发"
+            android:textSize="14dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:taxi="http://schemas.android.com/apk/res/com.easytaxi.etpassengersx"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/advice_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bb000000"
+        android:gravity="center"
+        android:text="建议加价打车！"
+        android:textColor="#f00"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_start_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bb000000"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingTop="0dp"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <cn.com.easytaxi.platform.view.AddressEditView
+                android:id="@+id/editText_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                taxi:load_oninflated="false" />
+
+            <ImageButton
+                android:id="@+id/icon_start_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/pic155" />
+
+            <ImageButton
+                android:id="@+id/editText_start_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/btn039"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/clear_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:background="@null"
+                android:src="@drawable/search_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp" >
+
+            <cn.com.easytaxi.platform.view.AddressEditView
+                android:id="@+id/editText_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                taxi:load_oninflated="false" />
+
+            <ImageButton
+                android:id="@+id/icon_end_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/pic155_end" />
+
+            <ImageButton
+                android:id="@+id/editText_end_btn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/btn039"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/clear_end"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:background="@null"
+                android:src="@drawable/search_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <include layout="@layout/publish_cartype_select" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <cn.com.easytaxi.airport.view.ScrollingTextView
+            android:id="@+id/jishi_scrollingTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F3F3"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="5dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="温馨提醒：高峰时期、短途用车，建议适当加价！"
+            android:textColor="@color/gray_black"
+            android:visibility="visible" />
+
+        <include layout="@layout/online_pricelist" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pic105"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_jishi_banyungong"
+            android:layout_width="70dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/bg_jishi_byg" >
+
+            <TextView
+                android:id="@+id/tv_jishi_banyungong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:paddingRight="8dp"
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:text="" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.0"
+            android:background="@null" >
+
+            <Button
+                android:id="@+id/one_send"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn026"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/info_one_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/one_send_img"
+                    android:shadowColor="#ffffffff"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="2.0"
+                    android:singleLine="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="@string/chat_pressed_say"
+                    android:textColor="#ff424242"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/one_send_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/pic134" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/re_one_send_parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.0"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/re_one_send"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn026"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/info_re_one_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:shadowColor="#ffffffff"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="2.0"
+                    android:singleLine="true"
+                    android:soundEffectsEnabled="true"
+                    android:text="重新发送"
+                    android:textColor="#ff424242"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/pic134"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/one_send_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="4dp"
+            android:background="@null"
+            android:src="@drawable/one_keyboard_btn" />
+    </LinearLayout>
+
+</LinearLayout>

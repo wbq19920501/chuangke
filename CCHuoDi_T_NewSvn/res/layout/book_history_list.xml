@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title_bar11"
+        layout="@layout/title_layout" />
+    
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_bar11"
+        android:background="#fff" >
+
+        <fragment
+            android:id="@+id/book_history_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="cn.com.easytaxi.book.BookHistoryListFragement" />
+    </FrameLayout>
+
+
+</RelativeLayout>

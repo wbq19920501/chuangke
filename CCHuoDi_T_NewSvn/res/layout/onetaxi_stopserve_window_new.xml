@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dlg_width"
+    android:background="@drawable/pic512"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/breach_commit_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="4dp" >
+
+        <EditText
+            android:id="@+id/onetaxi_edit_other"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:focusable="true"
+            android:hint="请输入其他原因"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="服务评价"
+            android:textColor="#000" 
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+      
+            android:background="#ff8226" />
+
+    
+
+        <EditText
+            android:id="@+id/cancel_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="top|left"
+            android:minHeight="80dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pop_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn026"
+                android:drawableLeft="@drawable/pic503"
+                android:paddingRight="0dp"
+                android:text="取消订单"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/pop_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn026"
+                android:drawableLeft="@drawable/pic501"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="差评"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/pop_good"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn026"
+                android:drawableLeft="@drawable/pic502"
+                android:paddingLeft="20dp"
+                android:text="好评"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/pop_close"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:background="@null"
+        android:src="@drawable/btn034" />
+
+</RelativeLayout>

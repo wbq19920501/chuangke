@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/breach_commit_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/onetaxi_radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/onetaxi_radio0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="#FFFFFF"
+            android:text="我已上车" />
+
+        <RadioButton
+            android:id="@+id/onetaxi_radio1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="司机没来" />
+        
+        <RadioButton
+            android:id="@+id/onetaxi_radio2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="不需要打车了" />
+
+        <RadioButton
+            android:id="@+id/onetaxi_radio_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="其他" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/onetaxi_edit_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:focusable="true"
+        android:hint="请输入其他原因"
+        android:visibility="gone" />
+
+</LinearLayout>

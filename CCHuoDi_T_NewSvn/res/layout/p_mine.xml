@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg002"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/main_head"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_mine_top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/p_mine_imageView"
+                android:layout_width="84dp"
+                android:layout_height="96dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/detail_logo" />
+
+            <LinearLayout
+                android:id="@+id/p_mine_namelayout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/p_mine_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:text="王师傅"
+                    android:textColor="#333333"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/p_mine_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/p_mine_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.0"
+                    android:gravity="top"
+                    android:text="18683434780"
+                    android:textColor="#909090"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/p_mine_changeIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:src="@drawable/bg_mine_edit" />
+            
+            <Button
+                android:id="@+id/p_mine_submitbtn"
+                android:layout_width="wrap_content"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:layout_marginRight="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/p_mine_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="1200"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="余额(元)"
+                    android:textColor="#909090"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/detail_line"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/score_layout"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/p_mine_score"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="1200"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="积分"
+                    android:textColor="#909090"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/detail_line" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/p_mine_book"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="1200"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="订单"
+                    android:textColor="#909090"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/detail_line" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/p_mine_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="1200"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="消息"
+                    android:textColor="#909090"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/detail_line" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/p_mine_breach"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="1200"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="违约"
+                    android:textColor="#909090"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/p_mine_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <cn.com.easytaxi.custom.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

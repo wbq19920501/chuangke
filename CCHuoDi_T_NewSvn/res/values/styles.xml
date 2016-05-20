@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="largeCustomProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/custom_loading</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+
+        <!-- name是我们在使用时要用到的资源的标志，parent是指当前的样式所继承的父类样式 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+
+        <!-- 隐藏标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Customdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+
+    <style name="show_lable">
+        <item name="android:textColor">#1c0a0a</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="show_value">
+        <item name="android:textColor">#353535</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="edit_value">
+        <item name="android:textColor">#35383a</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">#CDCDCD</item>
+        <item name="android:background">@drawable/edit_bg</item>
+    </style>
+
+    <style name="show_particular">
+        <item name="android:textColor">#ff0707</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="item_lable">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14.3sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="item_value">
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="p_main_icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+
+    <style name="p_main_icon_text">
+        <item name="android:textColor">#424242</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="title_tip">
+        <item name="android:textColor">#fcc424</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginTop">15dip</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="search_btn">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/btn035</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="search_btn1">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/btn045</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="book_label_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="book_city_label_text">
+        <item name="android:textColor">#fb6602</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="history_text_title">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="history_text_info">
+        <item name="android:textColor">#424242</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--
+           android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/btn042"
+    -->
+    <style name="more_quit_style">
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:background">#147A7C</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="profile_funtion_title_txt">
+        <item name="android:textColor">#666666</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="profile_funtion_item_txt">
+        <item name="android:textColor">#ff6306</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="profile_funtion_item_conatner">
+        <item name="android:background">#d2d2d2</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="loading_small" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">21dip</item>
+        <item name="android:layout_height">21dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="widget_listview">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:listSelector">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">1.0dip</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollingCache">false</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="pingjia_style">
+        <item name="android:textColor">@drawable/text_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+    
+    <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+    </style>
+
+    <style name="Bubble.TextAppearance.Light" parent="Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+
+    <style name="ClusterIcon.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

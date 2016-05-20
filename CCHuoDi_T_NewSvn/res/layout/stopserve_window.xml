@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/stopservice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pic_stopservice_title"
+            android:gravity="center"
+            android:text="结束"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <ExpandableListView
+                android:id="@+id/stopwindow_expandableListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollingCache="false"
+                android:cacheColorHint="@android:color/transparent"
+                android:visibility="visible" >
+            </ExpandableListView>
+
+            <EditText
+                android:id="@+id/stopservice_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/pic_stopservice_commpent" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/stopservice_comfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn026"
+                    android:drawableLeft="@drawable/pic_stopservice_comfirm"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:text="提交"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/stopservice_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn026"
+                    android:drawableLeft="@drawable/pic_stopservice_cancel"
+                    android:gravity="center"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="3dp"
+                    android:text="返回"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

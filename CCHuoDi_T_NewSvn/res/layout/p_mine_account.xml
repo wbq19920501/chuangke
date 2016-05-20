@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg002"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/map_title_bar"
+        layout="@layout/title_layout" />
+
+    <RadioGroup
+        android:id="@+id/p_mine_account_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/p_mine_account_radio0"
+            style="@style/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:button="@null"
+            android:checked="true"
+            android:text="金额"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/p_mine_account_radio1"
+            style="@style/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="易达币"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/p_mine_account_radio2"
+            style="@style/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="积分"
+            android:textColor="#666666"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/p_mine_account_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

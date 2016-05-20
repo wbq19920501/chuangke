@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/childlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="80dip"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/child_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:src="@drawable/pic_stopservice_item_default" />
+
+    <TextView
+        android:id="@+id/child_text_name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.0"
+        android:gravity="center_vertical"
+        android:text="非常满意"
+        android:textSize="24sp" >
+    </TextView>
+
+</LinearLayout>

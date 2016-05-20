@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+     android:background="@drawable/btn038"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/button_addd"
+        android:layout_width="60dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:text="常用"
+        android:textSize="16sp"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:drawablePadding="1dp"
+        android:textColor="#424242"
+        android:drawableLeft="@drawable/pic162"
+        android:background="@drawable/btn036"
+        android:layout_marginRight="10dp"
+          />
+    
+    
+    <cn.com.easytaxi.airport.view.ScrollingTextView
+        android:id="@android:id/text1"
+        style="?android:attr/dropDownItemStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+       	android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        android:textColor="#35383a"
+        android:textSize="16sp" 
+        android:layout_toLeftOf="@id/button_addd"
+        />
+    
+  <!--   <TextView
+        android:id="@android:id/text1"
+        style="?android:attr/dropDownItemStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+       	android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmallInverse"
+        android:textColor="#35383a"
+        android:textSize="16sp" 
+        android:layout_toLeftOf="@id/button_addd"/> -->
+
+</RelativeLayout>

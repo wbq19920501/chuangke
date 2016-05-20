@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tag_position" type="id"></item>
+
+    <string name="app_name">创客货的</string>
+    <string name="et_name">创客货的</string>
+    <string name="city_search_hint">城市名、拼音首字母...</string>
+    <string name="search_hint">城市名...</string>
+
+    <!-- about -->
+    <string name="copyright">Copyright(R)2012-2015 All Rights Reserved.</string>
+    <string name="copycompany">移动互联 创客货的</string>
+    <string name="softname">移动互联   •   智能出行</string>
+    <string name="companyemail">公司邮箱:  support@easytaxi.com.cn</string>
+    <string name="companysite">公司网址:  http://www.easytaxi.com.cn</string>
+    <string name="comunication">咨询电话:  400-990-2633</string>
+    <string name="weiboo">官方微博:  @创客货的-智能手机应用</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">上拉翻页</string>
+    <string name="xlistview_footer_hint_ready">松开载入下一页</string>
+
+    <string-array name="mode">
+        <item>平摊</item>
+        <item>电话商议</item>
+    </string-array>
+    <string-array name="num">
+        <item>1人</item>
+        <item>2人</item>
+        <item>3人</item>
+        <item>4人</item>
+    </string-array>
+    <string-array name="radius">
+        <item>50米</item>
+        <item>100米</item>
+        <item>200米</item>
+        <item>500米</item>
+    </string-array>
+    <string-array name="xradius">
+        <item>50米内附近拼友 ▼</item>
+        <item>100米内附近拼友 ▼</item>
+        <item>200米内附近拼友 ▼</item>
+        <item>500米内附近拼友 ▼</item>
+    </string-array>
+    <string-array name="levels">
+        <item>普通会员</item>
+        <item>银卡会员</item>
+        <item>金卡会员</item>
+        <item>钻石会员</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string-array name="week">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="bj_persons">
+        <item>无</item>
+        <item>电梯(50元)</item>
+        <item>2楼</item>
+        <item>3楼</item>
+        <item>4楼</item>
+        <item>5楼</item>
+        <item>6楼</item>
+        <item>7楼</item>
+        <item>8楼</item>
+    </string-array>
+    <string-array name="bj_banche">
+        <item>无</item>
+        <item>小型钢琴(300元/台)</item>
+        <item>中型钢琴(400元/台)</item>
+        <item>大型钢琴(500元/台)</item>
+        <item>大型鱼缸(100元/台)</item>
+        <item>大型电器(100元/台)</item>
+        <item>其他面议(0元/台)</item>
+    </string-array>
+    <string-array name="bj_floors">
+        <item>无</item>
+        <item>电梯(50元)</item>
+        <item>2楼</item>
+        <item>3楼</item>
+        <item>4楼</item>
+        <item>5楼</item>
+        <item>6楼</item>
+        <item>7楼</item>
+        <item>8楼</item>
+    </string-array>
+
+    <string name="tip_onetaxi_price">温馨提示:使用电召叫车将收取您5元叫车服务费.</string>
+    <string name="tip_book_price">温馨提示:使用电召叫车将收取您5元叫车服务费.</string>
+    <string name="tip_book_time">温馨提示:请重新设置正确的时间.</string>
+    <string name="addr_tip">温馨提醒：指定下车地点，更容易约到车哦！</string>
+    <string name="book_count">我的订单（共%1$s条）</string>
+    <string name="book_distance">距离约%1$s公里，预计费用%2$s元</string>
+    <string name="book_distance_short">距离约%1$s公里</string>
+    <string name="book_distance_item">%1$s公里(约%2$s元)</string>
+    <string name="rightnow">立即打表</string>
+    <string name="chat_pressed_say">长按说话</string>
+    <string name="chat_pressed_submit">提交</string>
+    <string name="chat_send">发送</string>
+    <string name="chat_example">例句：我在故宫，要去机场</string>
+    <string name="chat_example_word">输入下车地点能更快的打到车哦!</string>
+    <string name="chat_add_money_mine">自愿加价</string>
+    <string name="one_cancel_rcd">向上滑动，取消发送</string>
+    <string name="chatfooter_too_short">录音时间太短</string>
+    <string name="chatfooter_cancel_rcd_release">松开手指，取消发送</string>
+    <string name="network_notgood">网络不给力!</string>
+    <string name="chatfooter_sending">发送中...</string>
+    <string name="un_reg">你还没有注册呢!</string>
+    <string name="one_taxi_mark_info">车辆距您约%1$s,需要等待%2$s分钟左右 </string>
+    <string name="one_taxi_mark_info_ext">车辆距离%1$s,估计用车%2$s分钟，花费约%3$s元,调度费%4$s</string>
+    <string name="currentplace">当前位置</string>
+    <string name="one_taix_koubiao">        扣\n表</string>
+    <string name="fisrt_loading">数据加载中...</string>
+    <string name="diaoduding">正在努力地为您调度车辆，请稍候...</string>
+    <string name="easy_advertise_one">创客货的，说到就到！</string>
+    <string name="city_default_cityname">北京</string>
+    <string name="remd_user_to_taxi">推荐您使用易达打车软件司机端</string>
+    <string name="remd_user_to_user">推荐成功您和您的朋友都将获得一定的奖励。</string>
+    <string name="more_quit_txt">退出</string>
+    <string name="more_cancled_txt">注销</string>
+
+    <!-- 时间上的东东 2013-05-24 -->
+    <string name="time_minutes_ago">分钟前</string>
+    <string name="time_hours_ago">小时前</string>
+    <string name="time_yesterday">昨天</string>
+    <string name="time_before_yesterday">昨天前</string>
+    <string name="time_days_ago">天前</string>
+    <string name="load_ing">加载中...</string>
+    <string name="load_error">加载错误</string>
+    <string name="load_empty">无数据</string>
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+    <string name="pull_to_refresh_pull_label">Pull to refresh…</string>
+    <string name="pull_to_refresh_release_label">Release to refresh…</string>
+    <string name="pull_to_refresh_refreshing_label">Loading…</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="pull_to_refresh_from_bottom_pull_label">@string/pull_to_refresh_pull_label</string>
+    <string name="pull_to_refresh_from_bottom_release_label">@string/pull_to_refresh_release_label</string>
+    <string name="pull_to_refresh_from_bottom_refreshing_label">@string/pull_to_refresh_refreshing_label</string>
+    <!-- time -->
+    <string name="year">年前</string>
+    <string name="month">月前</string>
+    <string name="day">天前</string>
+    <string name="hour">小时前</string>
+    <string name="min">分钟前</string>
+    <string name="sec">秒前</string>
+    <string name="justnow">刚刚</string>
+    <string name="yesterday">昨天</string>
+    <string name="the_day_before_yesterday">前天</string>
+    <string name="today">今天</string>
+    <string name="date_format">M月d日 HH:mm</string>
+    <string name="year_format">yyyy年 M月d日 HH:mm</string>
+    <string name="msg_detail_title">消息详情</string>
+    <string name="airplan_number">输入航班号以便通知航班延误信息</string>
+    <string name="airplan_number_str">输入航班号以便通知您和司机航班是否延误</string>
+    <string name="voice_inputting_str">正在录音...</string>
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="Ensure">"确定"</string>
+    <string name="Cancel">"取消"</string>
+    <string name="activity_remote_service_binding">AppDemo4</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+    <string name="remote_call_failed">Failure calling remote service</string>
+    <string name="partnerHint">"partner"</string>
+    <string name="sellerHint">"seller"</string>
+    <string name="out_trade_noHint">"out_trade_no"</string>
+    <string name="subjectHint">"subject"</string>
+    <string name="bodyHint">"body"</string>
+    <string name="total_feeHint">"total_fee"</string>
+    <string name="notify_urlHint">"notify_url"</string>
+    <string name="charsetHint">"charset"</string>
+    <string name="signTypeHint">"signType"</string>
+    <string name="me_function_numColumns">"3"</string>
+    <string name="me_function_numRows">"100"</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+</resources>

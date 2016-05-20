@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg002" >
+
+    <include
+        android:id="@+id/titilebar_ontexi_address_seartch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/edit_address_ontexi_address_seartch"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/pic105"
+        android:layout_below="@id/titilebar_ontexi_address_seartch"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+   		
+      <EditText
+            android:id="@+id/editText_ontexi_address_seartch"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/btn029"
+            android:gravity="center_vertical"
+            android:hint="上车地址补充:如广场,路口等"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="35dp"
+            android:paddingRight="25dp"
+            android:singleLine="true" />
+      
+      <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:background="@null"
+            android:src="@drawable/ic_search" 
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+             />
+        
+    </RelativeLayout>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/pic105"
+        android:orientation="horizontal"
+        android:layout_below="@+id/edit_address_ontexi_address_seartch">
+         <Button
+            android:id="@+id/ok_btn_ontexi_address_seartch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            style="@style/search_btn1"
+            android:text="确定" />
+
+          <Button
+            android:id="@+id/cancel_btn_ontexi_address_seartch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            style="@style/search_btn1"
+            android:text="取消" />
+    </LinearLayout>
+
+</RelativeLayout>

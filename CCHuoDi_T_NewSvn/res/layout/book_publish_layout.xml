@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:taxi="http://schemas.android.com/apk/res/com.easytaxi.etpassengersx"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/advice_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bb000000"
+        android:gravity="center"
+        android:text="建议加价打车！"
+        android:textColor="#f00"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_start_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bb000000"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <cn.com.easytaxi.platform.view.AddressEditView
+                android:id="@+id/editText_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                taxi:load_oninflated="false" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@null"
+                android:text="上车："
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/clear_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:background="@null"
+                android:src="@drawable/search_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp" >
+
+            <cn.com.easytaxi.platform.view.AddressEditView
+                android:id="@+id/editText_end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                taxi:load_oninflated="false" />
+
+            <TextView
+                android:id="@+id/editText_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:background="@null"
+                android:text="下车："
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/clear_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:background="@null"
+                android:src="@drawable/search_clear"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="#66424242" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/online_pricelist"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_send"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/pic105"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/book_send"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn026"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/pic135" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#ffffffff"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="2.0"
+                android:soundEffectsEnabled="true"
+                android:text="提交"
+                android:textColor="#ff424242"
+                android:textSize="20sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

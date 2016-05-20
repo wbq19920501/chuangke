@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="500dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/show_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pic_stopservice_title"
+        android:gravity="center"
+        android:text="消息详情"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/show_message_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/show_msg_comfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn026"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pic_stopservice_comfirm" />
+
+                <TextView
+                    android:id="@+id/show_msg_comfirm_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="提交"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            
+             <LinearLayout
+                android:id="@+id/show_msg_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn026"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pic_stopservice_cancel" />
+
+                <TextView
+                    android:id="@+id/show_msg_cancel_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="返回"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

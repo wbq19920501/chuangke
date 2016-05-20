@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="bottom_but_width">75dp</dimen>
+    <dimen name="bottom_but_height">65dp</dimen>
+    <dimen name="top1">80dp</dimen>
+    <dimen name="top2">3dp</dimen>
+    <dimen name="width1">40dp</dimen>
+    <dimen name="height1">38.3dp</dimen>
+	<dimen name="onetaix_tip_address_font_size">14sp</dimen>
+	<dimen name="height_cartype">50dp</dimen>
+</resources>

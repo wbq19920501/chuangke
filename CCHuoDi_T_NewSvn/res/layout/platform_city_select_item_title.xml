@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_city_item_selector"
+    >
+    <TextView
+        android:id="@+id/row_item_title"
+        android:layout_width="wrap_content"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical|left"
+        android:textColor="#313131"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:text="上海"
+        android:layout_height="60dp"
+    />
+   <View android:layout_width="match_parent" android:layout_height="1px" android:background="#bdbdbd"/>
+ 
+</RelativeLayout>

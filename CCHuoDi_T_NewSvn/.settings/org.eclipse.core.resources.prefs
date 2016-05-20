@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/cn/com/easytaxi/util/HttpUtil.java=UTF-8
+encoding//src/com/easytaxi/etpassengersx/wxapi/PayActivity.java=UTF-8
+encoding//src/com/easytaxi/etpassengersx/wxapi/WXPayEntryActivity.java=UTF-8
+encoding//src/mapapi/clusterutil/clustering/algo/NonHierarchicalDistanceBasedAlgorithm.java=UTF-8
+encoding//src/mapapi/overlayutil/BikingRouteOverlay.java=UTF-8
+encoding//src/mapapi/overlayutil/BusLineOverlay.java=UTF-8
+encoding//src/mapapi/overlayutil/DrivingRouteOverlay.java=UTF-8
+encoding//src/mapapi/overlayutil/OverlayManager.java=UTF-8
+encoding//src/mapapi/overlayutil/PoiOverlay.java=UTF-8
+encoding//src/mapapi/overlayutil/TransitRouteOverlay.java=UTF-8
+encoding//src/mapapi/overlayutil/WalkingRouteOverlay.java=UTF-8
+encoding//src/net/sourceforge/simcpux/Constants.java=UTF-8

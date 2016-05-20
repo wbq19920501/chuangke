@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_g_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="要获得更佳的体验，请执行以下操作:"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_g_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="打开gps和移动网络定位功能"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox_gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/TextColorBlack"
+        android:textSize="16sp"
+        android:text="不再显示此内容" />
+
+</LinearLayout>

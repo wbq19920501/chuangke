@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="onetaxi"
+        android:title="即时打车" />
+    <Preference
+        android:key="phonetaxi"
+        android:title="电话召车" />
+    <Preference
+        android:key="booktaxi"
+        android:title="预约打车" />
+    <Preference
+        android:key="addition"
+        android:title="功能添加" />
+</PreferenceScreen>

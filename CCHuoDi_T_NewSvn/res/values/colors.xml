@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="orange">#ff911a</drawable>
+    <drawable name="blue">#1932B1</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+
+    <color name="rounded_container_border">#ffb7babb</color>
+    <color name="rounded_container_cneter">#ffffffff</color>
+    <color name="FFF1F1F1">#FFF1F1F1</color>
+    <color name="FFF5E2AF">#FFF5E2AF</color>
+    <color name="A00FFFFFF">#00FFFFFF</color>
+    <color name="AAE86F0B">#AAE86F0B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#ff9900</color>
+    <color name="green">#54c54d</color>
+    <color name="transparent">#00000000</color>
+    <color name="gold">#b89766</color>
+    <color name="red">#EE0000</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FFD700</color>
+    <color name="yellow_state">#FF6600</color>
+    <color name="green_state">#568c10</color>
+    <color name="blue">#2fa4cf</color>
+    <color name="main_black">#140202</color>
+    <color name="gray_black">#575757</color>
+    <color name="white_tip_bg">#E0E0E0</color>
+    <color name="main_bottom_black">#2B2F30</color>
+    <color name="goupitem_txt_checked">@color/orange</color>
+    <color name="goupitem_txt_default">#909090</color>
+    <color name="list_item_white">#F5F5F5</color>
+    <color name="list_item_dark">#EBEBEB</color>
+    <color name="normal_list_item_nor_one">#f3f3f3</color>
+    <color name="normal_list_item_nor_two">#ebebeb</color>
+    <color name="normal_list_item_sel">#ff7a00</color>
+    <color name="airport_item_color">#313131</color>
+    <color name="text_gray">#666666</color>
+
+    
+     <color name="button_blue">#418ff8</color>
+    <color name="line">#dddddd</color>
+</resources>

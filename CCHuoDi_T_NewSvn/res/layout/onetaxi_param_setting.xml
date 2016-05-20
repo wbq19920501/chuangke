@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg002"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bg001"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="参数设置"
+            android:textColor="#F1F1F1"
+            android:textSize="25dip" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dip"
+        android:text="实时交通"
+        android:textColor="#fcc424"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/param_traffic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/bg009"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/param_traffic_show_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/background009"
+            android:gravity="center_vertical"
+            android:text="当前状态：已开启"
+            android:textColor="#1c0a0a"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dip"
+        android:text="卫星地图"
+        android:textColor="#fcc424"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/param_satellite_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/bg009"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/param_satellite_show_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/background009"
+            android:gravity="center_vertical"
+            android:text="当前状态：已关闭"
+            android:textColor="#1c0a0a"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+</LinearLayout>

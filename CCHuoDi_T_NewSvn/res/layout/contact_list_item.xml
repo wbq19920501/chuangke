@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/list_city_item_selector"
+    android:descendantFocusability="blocksDescendants" >
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#77f08326"
+        android:paddingLeft="13dip"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alpha" >
+
+        <CheckBox
+            android:id="@+id/image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginLeft="10dp"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/image_view"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="6.0dip"
+            android:layout_toRightOf="@id/image_view"
+            android:singleLine="true"
+            android:text="123"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_below="@+id/name"
+            android:ellipsize="marquee"
+            android:text="123"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#424242" />
+    </RelativeLayout>
+
+</RelativeLayout>

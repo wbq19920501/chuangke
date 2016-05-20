@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#BB323539"
+    android:paddingBottom="10dp" >
+
+    <ImageButton
+        android:id="@+id/ib_onetaxi_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn043" />
+
+    <TextView
+        android:id="@+id/progress_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/ib_onetaxi_cancel"
+        android:text="@string/diaoduding"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_info"
+        android:layout_toLeftOf="@id/ib_onetaxi_cancel"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:minWidth="40dp"
+            android:text="1分20秒"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progress_time"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.0"
+            android:max="100"
+            android:progress="100" />
+    </LinearLayout>
+
+
+</RelativeLayout>

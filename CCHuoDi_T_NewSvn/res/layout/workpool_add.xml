@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:taxi="http://schemas.android.com/apk/res/com.easytaxi.etpassengersx"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F6F6F6"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bg001"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="发布拼车信息"
+            android:textColor="#F1F1F1"
+            android:textSize="25dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bg009"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="您的角色："
+                android:textColor="#5C5C5C"
+                android:textSize="16dip" />
+
+            <RadioGroup
+                android:id="@+id/workpool_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/workpool_role_passenger"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/workpool_role_passenger"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/bg010"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="乘客"
+                    android:textSize="12dip" />
+
+                <RadioButton
+                    android:id="@+id/workpool_role_driver"
+                    android:layout_width="80dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/bg011"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="司机"
+                    android:textSize="12dip" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg008" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/workpool_start_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="起始地址："
+                android:textColor="#5C5C5C"
+                android:textSize="16dip" />
+
+            <cn.com.easytaxi.platform.view.AddressEditView
+                android:id="@+id/workpool_start"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/workpool_start_lable"
+                android:background="#00FFFFFF"
+                taxi:hint="请输入起始地址" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/workpool_end_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="目的地址："
+                android:textColor="#5C5C5C"
+                android:textSize="16dip" />
+
+            <cn.com.easytaxi.platform.view.AddressEditView
+                android:id="@+id/workpool_end"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/workpool_end_lable"
+                android:background="#00FFFFFF"
+                taxi:hint="请输入目的地址" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg008" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/workpool_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="出发日期："
+                android:textColor="#5C5C5C"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/workpool_date"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/workpool_starttime"
+                android:background="#00FFFFFF"
+                android:gravity="center_vertical"
+                android:text="每周二,三,四,五"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:id="@+id/workpool_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="出发时间："
+                android:textColor="#5C5C5C"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/workpool_time"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@id/workpool_starttime"
+                android:background="#00FFFFFF"
+                android:gravity="center_vertical"
+                android:text="20:00"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg008" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="您的称呼："
+                android:textColor="#5C5C5C"
+                android:textSize="16dip" />
+
+            <EditText
+                android:id="@+id/workpool_name"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#00FFFFFF"
+                android:gravity="center_vertical"
+                android:hint="请输入真实姓名方便对方称呼"
+                android:inputType="text"
+                android:textColorHint="#CDCDCD"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg008" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="42dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="联系电话："
+                android:textColor="#5C5C5C"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/workpool_tel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#00FFFFFF"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:textColorHint="#CDCDCD"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg008" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:padding="5dip"
+            android:paddingTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="备        注："
+                android:textColor="#5C5C5C"
+                android:textSize="16dip" />
+
+            <EditText
+                android:id="@+id/workpool_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:background="#00FFFFFF"
+                android:gravity="center_vertical"
+                android:hint="备注什么设么的"
+                android:inputType="textMultiLine"
+                android:textColorHint="#CDCDCD"
+                android:textSize="16dip" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg008" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/workpool_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn013" />
+
+</LinearLayout>
